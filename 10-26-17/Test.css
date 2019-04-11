@@ -1,0 +1,10 @@
+/* This is the stylesheet for the website */
+
+.w3-myfont {
+  font-family: "super_smash_4_1_by_pokemon_diamond-d7zxu6d";
+}
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}

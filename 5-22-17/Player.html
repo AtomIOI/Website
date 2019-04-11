@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> SquadGrunt</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Smash leaderboard">
+  <meta name="author" content="Juan Benavides">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="w3-theme-blue.css">
+  <link rel="stylesheet" href="Test.css">
+  <link rel="stylesheet" href="w3.css">
+</head>
+
+<body>
+
+  <div class="w3-sidebar w3-bar-block w3-card w3-theme-d2 w3-center w3-xlarge" style="width:15%">
+    <h3 class="w3-bar-item w3-xxxlarge " >Content</h3>
+    <a href="Leaderboard.html" class="w3-bar-item w3-button w3-padding-16">Leaderboard</a>
+    <a href="Matches.html" class="w3-bar-item w3-button w3-padding-16">Matches</a>
+    <a href="Player.html" class="w3-bar-item w3-button w3-padding-16 w3-theme-d3">Players</a>
+  </div>
+
+  <div style="margin-left:15%">
+
+    <div class="w3-container">
+      <div class="w3-card-4">
+        <header class="w3-container w3-theme-d1 w3-center">
+          <h1 class="w3-xxxlarge w3-myfont"> Squad Grunt </h1>
+        </header>
+      </div>
+    </div>
+
+    <div class="w3-container w3-padding-16">
+      <form class="w3-card-4">
+
+        <header class="w3-theme w3-center">
+          <h1> Input new player info</h1>
+        </header>
+
+        <label class="w3-xlarge w3-margin-left">Gamertag/Name</label>
+        <input class="w3-input w3-margin-left" type="text" style= "width:98%" id="Name">
+
+        <label class="w3-xlarge w3-margin-left">Icon</label>
+        <select class="w3-select w3-margin-left" name="option" style= "width:98%" id="icon">
+          <option value="" disabled selected>Choose your icon</option>
+          <option value="stock_90_mario_01">Mario</option>
+          <option value="stock_90_luigi_01">Luigi</option>
+          <option value="stock_90_peach_01">Peach</option>
+          <option value="stock_90_koopa_01">Bowser</option>
+          <option value="stock_90_drmario_01">Dr.Mario</option>
+          <option value="stock_90_yoshi_01">Yoshi</option>
+          <option value="stock_90_donkey_01">Donkey Kong</option>
+          <option value="stock_90_diddy_01">Diddy Kong</option>
+          <option value="stock_90_link_01">Link</option>
+          <option value="stock_90_zelda_01">Zelda</option>
+          <option value="stock_90_sheik_01">Sheik</option>
+          <option value="stock_90_ganon_01">Ganondorf</option>
+          <option value="stock_90_toonlink_01">Toon Link</option>
+          <option value="stock_90_samus_01">Samus</option>
+          <option value="stock_90_szerosuit_01">Zero Suit Samus</option>
+          <option value="stock_90_kirby_01">Kirby</option>
+          <option value="stock_90_metaknight_01">Meta Knight</option>
+          <option value="stock_90_dedede_01">King Dedede</option>
+          <option value="stock_90_fox_01">Fox</option>
+          <option value="stock_90_falco_01">Falco</option>
+          <option value="stock_90_pikachu_01">Pikachu</option>
+          <option value="stock_90_purin_01">Jigglypuff</option>
+          <option value="stock_90_mewtwo_01">Mewtwo</option>
+          <option value="stock_90_lizardon_01">Charizard</option>
+          <option value="stock_90_lucario_01">Lucario</option>
+          <option value="stock_90_captain_01">Captain Falcon</option>
+          <option value="stock_90_ness_01">Ness</option>
+          <option value="stock_90_lucas_01">Lucas</option>
+          <option value="stock_90_marth_01">Marth</option>
+          <option value="stock_90_roy_01">Roy</option>
+          <option value="stock_90_ike_01">Ike</option>
+          <option value="stock_90_gamewatch_01">Mr.Game & Watch</option>
+          <option value="stock_90_pit_01">Pit</option>
+          <option value="stock_90_wario_01">Wario</option>
+          <option value="stock_90_pikmin_01">Olimar</option>
+          <option value="stock_90_robot_02">R.O.B</option>
+          <option value="stock_90_sonic_01">Sonic</option>
+          <option value="stock_90_rosetta_01">Rosalina & Luma</option>
+          <option value="stock_90_koopajr_01">Bowser Jr.</option>
+          <option value="stock_90_gekkouga_01">Greninja</option>
+          <option value="stock_90_reflet_01">Robin</option>
+          <option value="stock_90_lucina_01">Lucina</option>
+          <option value="stock_90_kamui_02">Corrin</option>
+          <option value="stock_90_palutena_01">Palutena</option>
+          <option value="stock_90_pitb_01">Dark Pit</option>
+          <option value="stock_90_murabito_01">Villager</option>
+          <option value="stock_90_littlemac_01">Little Mac</option>
+          <option value="stock_90_wiifit_01">Wii Fit Trainer</option>
+          <option value="stock_90_shulk_01">Shulk</option>
+          <option value="stock_90_duckhunt_01">Duck Hunt</option>
+          <option value="stock_90_rockman_01">Mega Man</option>
+          <option value="stock_90_pacman_01">Pac-Man</option>
+          <option value="stock_90_ryu_01">Ryu</option>
+          <option value="stock_90_cloud_02">Cloud</option>
+          <option value="stock_90_bayonetta_01">Bayonetta</option>
+          <option value="stock_90_sandbag_01">Sandbag</option>
+        </select>
+
+
+        <div class="w3-container w3-padding-16">
+          <button class="w3-button w3-theme w3-round" onclick="addPlayer()"> Add Player </button>
+        </div>
+
+      </form>
+    </div>
+
+    <div class="w3-container w3-padding-16">
+      <ul class="w3-ul w3-card-4 w3-large w3-center">
+        <header class="w3-theme w3-center">
+          <h1> List of Players</h1>
+        </header>
+
+        <li>Jill</li>
+        <li>Eve</li>
+        <li>Adam</li>
+      </ul>
+    </div>
+
+  </div>
+
+</body>
+
+<script>
+
+function addPlayer() {
+  var name, icon, elo;
+  name = document.getElementById('Name');
+  icon = document.getElementById('icon');
+  getElementById('test').innerHTML = name;
+
+}
+
+</script>
+
+</html>
